@@ -17,6 +17,8 @@ use App\Http\Controllers\frontend\UserController;
 use App\Http\Controllers\frontend\contactComplains;
 use Illuminate\support\Facades\Mail;
 use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
