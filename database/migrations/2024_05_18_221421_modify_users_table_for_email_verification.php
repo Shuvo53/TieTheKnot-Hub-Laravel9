@@ -14,7 +14,7 @@ class ModifyUsersTableForEmailVerification extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             // Change email_verified_at to be nullable
-            $table->timestamp('email_verified_at')->nullable()->change();
+            // $table->timestamp('email_verified_at')->nullable()->change();
         });
     }
 
@@ -27,7 +27,7 @@ class ModifyUsersTableForEmailVerification extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             // Reverse the changes by making email_verified_at not nullable
-            $table->timestamp('email_verified_at')->nullable(false)->change();
+            // $table->timestamp('email_verified_at')->nullable(false)->change();
         });
     }
 }

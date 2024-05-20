@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\frontendController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\ProductController;
@@ -43,6 +43,14 @@ Route::get('/success', [CartController::class, 'success'])->name('success');
 
 
 Auth::routes();
+
+// Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+// Route::post('/login', [AuthController::class, 'login']);
+// Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
+// Route::post('/register', [AuthController::class, 'register']);
+// Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
 
 Route::get('/email', function(){
     Mail::to('saymamridula521@gmail.com')->send(new WelcomeMail());

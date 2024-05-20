@@ -2,7 +2,7 @@
 
 
 @section('title')
-   WedSite
+   Bliss
 @endsection
 
 @section('content')

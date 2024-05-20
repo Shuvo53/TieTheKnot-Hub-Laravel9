@@ -18,18 +18,18 @@ return new class extends Migration
             $table->bigInteger('cate_id');
             $table->string('name');
             $table->string('slug');
-            // $table->mediumText('small_description');
+            $table->mediumText('small_description');
             $table->longText('description');
             $table->string('original_price');
             $table->string('selling_price');
             $table->string('image');
-            // $table->string('qty');
-            // $table->string('tax');
+            $table->string('qty');
+            $table->string('tax');
             $table->tinyInteger('status');
             $table->tinyInteger('trending');
-            // $table->mediumText('meta_title');
-            // $table->mediumText('meta_keyword');
-            // $table->mediumText('meta_description');
+            $table->mediumText('meta_title');
+            $table->mediumText('meta_keyword');
+            $table->mediumText('meta_description');
             $table->timestamps();
         });
     }
