@@ -13,6 +13,10 @@ class contactComplains extends Controller
     {
         return view('frontend.ContactUS');
     }
+    public function howItWorks()
+    {
+        return view('frontend.howItWorks');
+    }
 
     public function submitForm(Request $request)
     {

@@ -281,6 +281,7 @@ a
 
     @include('layouts.inc.frontNavBar')
 
+    @include('layouts.inc.IntroVideo')
   <div class="content">
     @yield('content')
   </div>

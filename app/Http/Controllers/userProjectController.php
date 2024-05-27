@@ -16,17 +16,17 @@ class UserProjectController extends Controller
         return view('frontend.projects.index');
     }
 
-    // public function showResidential()
-    // {
-    //     // Fetch residential projects
-    //     $projects = Project::where('type', 'residential')->get();
-    //     return view('projects.residential', compact('projects'));
-    // }
+    public function showResidential()
+    {
+        // // Fetch residential projects
+        // $projects = Project::where('type', 'residential')->get();
+        return view('frontend.projects.residential');
+    }
 
-    // public function showCommercial()
-    // {
-    //     // Fetch commercial projects
-    //     $projects = Project::where('type', 'commercial')->get();
-    //     return view('projects.commercial', compact('projects'));
-    // }
+    public function showCommercial()
+    {
+        // Fetch commercial projects
+        // $projects = Project::where('type', 'commercial')->get();
+        return view('frontend.projects.commercial');
+    }
 }

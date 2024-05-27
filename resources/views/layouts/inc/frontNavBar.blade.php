@@ -95,6 +95,7 @@
             color: white;
         }
 
+
     </style>
     <div class="container-fluid navbar-default">
         <a class="navbar-brand active" href="{{ url('/') }}">BLISS</a>
@@ -104,8 +105,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link px-3 active" aria-current="page" href="/">Home</a>
-                <a class="nav-link px-3 active" aria-current="page" href="/">How It Works</a>
-                <a class="nav-link px-3 active" href="{{ url('frontend.projects.index') }}">Projects</a>
+                <a class="nav-link px-3 active" href="{{ url('/work') }}">How It Works</a>
+                <a class="nav-link px-3 active" href="{{ route('frontend.projects.index') }}">Projects</a>
                 <a class="nav-link px-3 active" href="{{ url('contact') }}">Contact</a>
                 <a class="nav-link px-3 active" href="{{ url('about') }}">About Us</a>
             </div>
@@ -140,7 +141,9 @@
                     <a class="nav-link cartblack" id="loginblack" href="{{ route('register') }}">{{ __('Register') }}</a>
                 </li>
                 @endif
+
             </div>
         </div>
     </div>
 </nav>
+

@@ -25,6 +25,8 @@ use App\Http\Controllers\CommercialProjectController;
 use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\UserProjectController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -100,6 +102,7 @@ Route::middleware(['auth.session'])->group(function () {
     Route::get('contact',[contactComplains::class ,  'index']);
     Route::post('sendMessage',[contactComplains::class ,  'submitForm']);
     Route::view('about' , 'frontend.About');
+    Route::get('/work',[contactComplains::class ,'howItWorks']);
 
     Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
 // routes/web.php

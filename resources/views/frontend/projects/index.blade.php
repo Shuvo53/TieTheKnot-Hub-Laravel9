@@ -1,4 +1,4 @@
-{{-- @extends('layouts.customer')
+@extends('layouts.customer')
 
 @section('title')
     BLISS Projects
@@ -35,5 +35,5 @@
 </div>
 <div class="py-5"></div>
 
-@endsection --}}
-<h4>index</h4>
+@endsection
+

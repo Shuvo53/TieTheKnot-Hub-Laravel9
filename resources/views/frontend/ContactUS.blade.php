@@ -13,9 +13,9 @@
     <!--Section: Contact v.2-->
 <section class="mb-4">
 
-    <div>
+    {{-- <div>
         <img src="images/background.jpg">
-    </div>
+    </div> --}}
 
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
