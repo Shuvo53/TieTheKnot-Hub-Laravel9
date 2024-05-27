@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-     <title> TieTheKnot Hub Admin Panel</title>
+     <title> Bliss Admin Panel</title>
 
 
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>

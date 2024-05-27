@@ -17,23 +17,42 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white  {{ Request::is('categories') ? 'active' : '' }}" href="{{url('categories')}}">
+        {{-- <li class="nav-item">
+          <a class="nav-link text-white  {{ Request::is('categories') ? 'active' : '' }}" href="{{url('residential_projects.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">category</i>
             </div>
-            <span class="nav-link-text ms-1">Categories</span>
+            <span class="nav-link-text ms-1">Projects</span>
           </a>
+        </li> --}}
+        <li class="nav-item">
+            <a class="nav-link text-white {{ Request::is('admin/projects*') ? 'active' : '' }}" href="{{ route('project.index') }}">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="material-icons opacity-10">business_center</i>
+                </div>
+                <span class="nav-link-text ms-1">Projects</span>
+            </a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white {{ Request::is('add-category') ? 'active' : ''}} " href="{{url('add-category')}}">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">add_circle</i>
-            </div>
-            <span class="nav-link-text ms-1">Add Category</span>
-          </a>
+
+        <li class="nav-item">
+            <a class="nav-link text-white {{ Request::is('admin/residential/create*') ? 'active' : '' }}" href="{{ route('residential_projects.create') }}">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="material-icons opacity-10">category</i>
+                </div>
+                <span class="nav-link-text ms-1">Add Residential Projects</span>
+            </a>
         </li>
-        <li class="nav-item ">
+
+        <li class="nav-item">
+            <a class="nav-link text-white {{ Request::is('admin/commercial/create*') ? 'active' : '' }}" href="{{ route('commercial_projects.create') }}">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="material-icons opacity-10">category</i>
+                </div>
+                <span class="nav-link-text ms-1">Add Commercial Projects</span>
+            </a>
+        </li>
+
+        {{-- <li class="nav-item ">
           <a class="nav-link text-white {{ Request::is('products') ? 'active' : ''}} " href="{{url('products')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">inventory_2</i>
@@ -56,7 +75,7 @@
             </div>
             <span class="nav-link-text ms-1">Orders List</span>
           </a>
-        </li>
+        </li> --}}
         <li class="nav-item ">
           <a class="nav-link text-white {{ Request::is('users') ? 'active' : ''}} " href="{{url('users')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -65,6 +84,26 @@
             <span class="nav-link-text ms-1">Users List</span>
           </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-white {{ Request::is('admin/team/index') ? 'active' : '' }}" href="{{ route('team_members.index') }}">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="material-icons opacity-10">group</i>
+                </div>
+                <span class="nav-link-text ms-1">Team Members</span>
+            </a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link text-white {{ Request::is('admin/team/create') ? 'active' : '' }}" href="{{ route('team_members.create') }}">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="material-icons opacity-10">group</i>
+                </div>
+                <span class="nav-link-text ms-1">Add Team Members</span>
+            </a>
+        </li>
+
+
         <li class="nav-item ">
             <a class="nav-link text-white {{ Request::is('message') ? 'active' : ''}}" href="{{url('message')}}">
 

@@ -2,7 +2,7 @@
 
 
 @section('title')
-     TieTheKnot Hub
+     BLISS
 @endsection
 
 
@@ -12,6 +12,10 @@
 <div class="container">
     <!--Section: Contact v.2-->
 <section class="mb-4">
+
+    <div>
+        <img src="images/background.jpg">
+    </div>
 
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
